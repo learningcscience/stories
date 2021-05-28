@@ -1,0 +1,367 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title> Library - Stories -  Haroo the Croc </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel = "icon" href ="images/logo.jpg" type = "image/x-icon">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+
+	<link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
+</head>
+	<style>
+		
+		*{
+			box-sizing: border-box;
+		}
+		body{
+			margin:0;
+			font-family: 'Pattaya', sans-serif;
+		}
+	
+		[class*="col-"] {
+			float:left;
+			padding: 10px;
+		}
+
+
+		.navigation a:first-child{
+			font-size: 30px;
+		}
+		button{
+			padding:12px 90px;
+			background: #00A878;
+			color: white;
+			border: 1px solid #00A878;
+			font-size:20px;
+			letter-spacing: 2px;
+			border-radius: 20px;
+		}
+		button:hover{
+			transition: .2s;
+			letter-spacing: 0px;
+			border:none;
+			background-color: #00CC92;
+			color:white;
+		}
+		.navigation{
+			padding: 15px;
+			background-color: #f44336;
+			box-shadow: 1px 14px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+			position:fixed;
+			top:0;
+			left:0;
+			width:100%;
+		}
+		.navigation a{
+			color: white;
+			font-size: 20px;
+			padding: 20px;
+			letter-spacing: 2px;
+			text-decoration:none;
+		}
+		.icon{
+			float:right;
+			display:none;
+		}
+		.row::after {
+			  content: "";
+  			  clear: both;
+  			  display: table;
+		}
+
+		.footer {
+   			 text-align: center;
+    			background: #333B2B;
+   	 		color: white;
+			
+		}
+		.footer h3{
+			font-size: 28px;
+		}
+		.footer a {
+    			text-decoration: none;
+    			color: white;
+    			font-size: 22px;
+		}
+		.footer a:hover{
+			text-decoration:underline;
+		}
+		.footer p{
+			font-size: 20px;
+		}
+		.footer p.foot{
+			font-family: 'Pattaya', sans-serif;
+			font-size: 20px;
+		}
+
+		img.designer {
+    			border-radius: 50%;
+		}
+		 p{
+			text-align:center;
+			font-family: 'Open Sans', sans-serif;
+			font-size:25px;
+		}
+		.pages{
+			text-align: center;
+		}
+		.pages a{
+			text-decoration:none;
+			color:white;
+			padding: 15px 40px;
+			border: 2px solid white;	
+			font-size:20px;
+			background: #FF495C;
+		}
+
+		.pages a:hover:not(.active) {
+			opacity: 0.7;
+	
+		}
+
+		a.active{
+			background: black;
+		}
+		h1{
+			text-align:center;
+			letter-spacing: 2px;
+			font-size: 4em;
+		}
+		p.writter{
+			font-size: 40px;
+			margin-left: 20px;
+		}
+		span{
+			color: #F0386B;
+		}
+		.right {
+    			background: #fd2b1b;
+    			text-align: center;
+    			font-size: 25px;
+    			color: white;
+		}
+		/* For desktop: */
+			.col-1 {width: 8.33%;}
+			.col-2 {width: 16.66%;}
+			.col-3 {width: 25%;}
+			.col-4 {width: 33.33%;}
+			.col-5 {width: 41.66%;}
+			.col-6 {width: 50%;}
+			.col-7 {width: 58.33%;}
+			.col-8 {width: 66.66%;}
+			.col-9 {width: 75%;}
+			.col-10 {width: 83.33%;}
+			.col-11 {width: 91.66%;}
+			.col-12 {width: 100%;}
+
+		@media only screen and (max-width: 768px) {
+ 			 
+  				[class*="col-"] {
+    					width: 100%;
+				}
+				img{
+					max-width:100%;
+					height: auto;
+				}
+				h1{
+					font-size: 30px;
+					text-align:center;
+					margin-top: 1%;
+				}
+				p{
+					font-size: 28px;
+				}
+
+				.navigation a:not(:first-child){
+					display:none;
+				}
+				.navigation{
+					position:relative;
+				}
+				.navigation a.icon{
+					display:block;
+					float:none;
+					position:absolute;
+					top:0;
+					right:0;
+				}
+				div.navigation.clicked a {
+					display: block;
+					float: none;
+				}
+				.footer{
+					margin-top: 100%;
+				}
+				.footer p{
+					font-size: 25px;
+				}
+				.pages{
+					text-align:center;
+				}
+				.pages a{
+					margin: 10px;
+				}
+
+				.navigation{
+					position:fixed;
+					top:0;
+					left:0;
+					width:100%;
+				}
+				h2{
+					font-size:30px;
+				}
+
+
+		}
+
+	</style>
+
+<body>
+
+	<div class="navigation" id="navbar">
+		<a href="index.html" class="first"><i class="fa fa-home"></a></i>
+		<a href="#"> Stories </a>
+		<a href="contact.html"> Contact </a>
+		<a href="#"> About </a>
+		<a href="javascript:void(0)" class="icon" onclick="Click()"><i class="fa fa-bars"></a></i>
+	</div>
+
+	
+	<div class="row">
+
+		<img src="images/lord.jpg" width="100%">
+		<br><br>
+		<h1> Haroo the Croc </h1>
+
+		<p>One day the stationmaster of lang brings home anaunusual pet for his children a baby corcodile <br>
+		      !Read to find what happens as Haroo growsbigger. <br> <br>
+
+		     Within a few weeks, Haroo became tame and friendly. He did not bare his teeth quite so often. He <br>
+	   	     could see that the family was taking care ogf him. Father bought some nylon string, tried it frimly<br>
+		     round Haroo's waist and threw him into the railway pond. Mother was delighted. After all, a coo-<br>
+		     rcodil's place is in water. <br><br>
+
+		     The news soon spread all over the village that Viaks Babu, the stationmaster, had brought an an enromus<br>
+		     corcodile from the Sunderbans* and kept it in the railway pond so that no one couls steal any fish .No one <br> 
+		     heared the illegal splash of fishing nets at night anymore. Angler's whosat on the bank with fishing rods, <br>			     during the early mornings and the quiet afternoons, disappeared as if by magic! Earlier, village girls often<br> 		                  used the pond to wasg dirty clothes and buffaloes lazed in the water after ploughing the fields. But that too<br> 	       		    stopped now, without Haroo having his heethor swish his-tail his vaey name seemed to scare them off !<br>
+		   "very good!" Father said."Haroo can do a great deal if we can train him. These people have been stealing fish<br>
+		    from the pond all this time. At last, we've been able to taste some fish, thanks to Haroo"<br><br>
+
+		    Haroo loved the pond .And the children loved Haroo. They stroked and petted him abd fed him tidbits from<br>
+		    home. After a few days, Haroo came up from pond suited him and put on weight steily. He soon learn to<br> 		    	    cross the railway lines &  come home onhis own. He would lie in the courtyard, lazily basking in the sun <br> 		   	   .Haroo grew bolder day by day. HE soon set off with Father to the railway station every day. A useless    <br> 		   	   weighing machine had been lying in a corner og the platfrom for a long time. Haroo would go and lie on it <br>		   		   quietly, the whole day. Vikas Babu had wlways been a strict stationmaster. He did not like it when people<br>
+		   travlled without a ticket. But being the only officer,  he could not always prevent it. <br><br>
+		  Only a few passengers bought monthly passes.The railings were broken at the eastern ane of the platfrom<br>
+		  and travellers without tickets always chose this ebd to aviod the stationmaster. One morning as, soon as<br>
+		  old man got and off the 11.45 Local and made for the broken railings, Haroo came slithering and caught<br>
+		  hold of his dhoti. The man dropped his bundle of rice and bananas in panic and let out a wild scream.He <br>
+		  would probably have fainted on the spot had Vikas Babu not come running to see what noise was all about 		  		 <br><br>
+	
+		It is difficuilt to say why Haroo behaved the way he did. But Vikas Babu just smiled and said., "Really,<br> 				sir,how much longer are you going to travelwithout a ticket at your age! you'r better start buying tickets from"<br>
+		now on, then youcan travel without fear . Haroo won't atack you if have a ticket".The story spread like wildfire<br>
+		!It gaine colour as it travelled.Everyone at the local teashop claimed that if you tried travelling without a tcicket<br>
+		the corcodile would bite chunks off your body!. <br><br>
+	
+		Nowadays, there is always a l-o-n-g queue in front of the ticket counter, both in the morning & in the evenings<br>
+		!at times, Vikas Babu finds it thouh to cope with. Something else has happened, thanks to Haroo .Loafers crooks<br>
+		have stoppe loitering about on the railway platfrom. Stray dogs which used to sqabble in the station yard have <br>
+		disappeared. Haroo's presence on the weighing scales has scared them off. The station is so still that one can<br>
+		almost hear the leaves falling!. Vikas Babu has recived two certificates from the Head Office, one for having the<br>
+		cleanest station, & the other because of the suden incease in railway income from his particular station. Of-<br>
+		course, Vikas Babu is very pleased<br><br>
+
+		And Shanto, Kanto & Khuku continue to climb onto Haroo's back and play 'Riding a Corcodile' With him- after all, heis 		their favoourite pet! </p>		
+			
+	<p class="writter">By: <span><strong>Bijan Kumar Ghosh</span></strong> </p>
+
+	</div>
+
+	<div class="pages">
+		
+	<a href="#" class="col-2">&lt; &nbsp &nbsp Previous</a>
+	
+		<a href="page1.html" class=" col-2">1</a>
+		<a href="page2.html"  class=" active col-2">2</a>
+		<a href="page3.html"  class="col-2">3</a>
+		<a href="page4.html"  class="col-2"s>4</a>
+	
+	<a href="#" class="col-2"> Next &nbsp &nbsp &gt;</a>
+
+	</div>
+
+
+<br><br><br>
+	
+	
+		<div class="footer">
+	
+			<div class="row">
+		
+
+			<div class="col-3">
+				<h2>Contact Info: </h2>
+					<p class="foot"> Email: Storynp@gmail.com</p>
+					<p class="foot"> Phone Number: 9840297322 </P>
+			</div>
+
+
+			<div class="col-3">
+				<h2>Shortcuts: </h2>
+					<a href="index.html"> Home </a><br><br>
+					<a href="page1.html"> Stories </a><br><br>
+					<a href="contact.html"> Contact </a><br><br>
+					<a href="about.html"> About </a><br>
+					
+			</div>
+			
+			
+
+			<div class="col-3">
+				<h2> Branches: </h2>
+					<p class="foot"> New, baneshwor, KTM </P>
+					<p class="foot"> Boudha, KTM </P>
+					<p class="foot"> Brindamod, Jhapa </P>
+			</div>
+
+			<div class="col-3">
+				<h2> Designer & Developer </h2>
+					<a href="#"><p> Bastola Budha </p></a>
+			</div>
+		</div>
+		
+	</div>
+
+
+	<div class="right col-12">
+			<p> &copy; cpyo right Stories.com 2021</p>
+	</div>
+
+
+	<script>
+			function Click(){
+
+				let nav = document.getElementById("navbar");
+				if(nav.className === "navigation"){
+				nav.className += " clicked";
+				}	
+				else{
+					nav.className = "navigation";	
+				}
+			}
+
+
+	</script>
+	
+</body>
+
+</html>

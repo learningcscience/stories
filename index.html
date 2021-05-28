@@ -1,0 +1,278 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+
+	<title> Library - Home </title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	
+	<link rel = "icon" href ="images/logo.jpg" type = "image/x-icon">
+
+	<link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+</head>
+	<style>
+		
+		*{
+			box-sizing: border-box;
+		}
+		body{
+			margin:0;
+			font-family: 'Pattaya', sans-serif;
+		}
+	
+		[class*="col-"] {
+			float:left;
+			padding: 10px;
+		}
+		h1{
+			font-size: 4em;
+			letter-spacing: 2px;
+		}
+
+		p{	font-size:25px;
+			text-align:center;
+		}
+		.item{
+			text-align:center;
+		}
+		.navigation a:first-child{
+			font-size: 30px;
+		}
+		button{
+			padding:12px 60px;
+			background:  #f44336;
+			color: white;
+			border:none;
+			font-size:20px;
+			border-radius: 50px;
+			font-family: 'Open Sans', sans-serif;
+			cursor:pointer;
+		}
+		button:hover{
+			transition: .2s;
+			background-color:  #2196F3;
+		}
+		.navigation{
+			padding: 15px;
+			background-color:#f44336;
+			box-shadow: 1px 14px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+			position:fixed;
+			top:0;
+			left:0;
+			width:100%;
+		}
+		.navigation a{
+			color: white;
+			font-size: 20px;
+			padding: 20px;
+			letter-spacing: 2px;
+			text-decoration:none;
+		}
+		.icon{
+			float:right;
+			display:none;
+		}
+		.row::after {
+			  content: "";
+  			  clear: both;
+  			  display: table;
+		}
+
+		.footer {
+   			 text-align: center;
+    			background: #333B2B;
+   	 		color: white;
+		}
+		.footer h3{
+			font-size: 28px;
+		}
+		.footer a {
+    			text-decoration: none;
+    			color: white;
+    			font-size: 22px;
+		}
+		.footer a:hover{
+			text-decoration:underline;
+		}
+		.footer p{
+			font-size: 20px;
+		}
+		h2{
+			letter-spacing: 1px;
+		}
+		.right {
+    			background: #fd2b1b;
+    			text-align: center;
+    			font-size: 25px;
+    			color: white;
+		}
+		/* For desktop: */
+			.col-1 {width: 8.33%;}
+			.col-2 {width: 16.66%;}
+			.col-3 {width: 25%;}
+			.col-4 {width: 33.33%;}
+			.col-5 {width: 41.66%;}
+			.col-6 {width: 50%;}
+			.col-7 {width: 58.33%;}
+			.col-8 {width: 66.66%;}
+			.col-9 {width: 75%;}
+			.col-10 {width: 83.33%;}
+			.col-11 {width: 91.66%;}
+			.col-12 {width: 100%;}
+
+		@media only screen and (max-width: 768px) {
+ 			 
+  				[class*="col-"] {
+    					width: 100%;
+				}
+				img{
+					max-width:100%;
+					height: auto;
+				}
+				h1{
+					font-size: 30px;
+					text-align:center;
+					margin-top: 1%;
+				}
+				p{
+					font-size: 20px;
+				}
+				h2{
+					font-size: 30px;
+				}
+
+				.navigation a:not(:first-child){
+					display:none;
+				}
+				.navigation{
+					position:relative;
+				}
+				.navigation a.icon{
+					display:block;
+					float:none;
+					position:absolute;
+					top:0;
+					right:0;
+				}
+				div.navigation.clicked a {
+					display: block;
+					float: none;
+				}
+				.footer{
+					margin-top: 30px;
+				}
+				.footer p{
+					font-size: 25px;
+				}
+				.navigation{
+					position:fixed;
+					top:0;
+					left:0;
+					width:100%;
+				}
+
+		
+
+		}
+
+	</style>
+
+<body>
+
+	<div class="navigation" id="navbar">
+		<a href="javascript:void(0)" class="first active"><i class="fa fa-home"></a></i>
+		<a href="page1.html"> Stories </a>
+		<a href="contact.html"> Contact </a>
+		<a href="#"> About </a>
+		<a href="javascript:void(0)" class="icon" onclick="Click()"><i class="fa fa-bars"></a></i>
+
+	</div>
+	<br><br>
+
+	<div class="row">
+
+	<div class="col-6"><br>
+		<img src="images/1.png" width="500">
+	</div>
+
+	<div class="col-6">
+		<h1> Read stories & enjoy !</h1>
+			<p> We  are here to make your kids perfect readre's .<br>This site will also help you's child to enjoy. 			Also<br> they will be able to read & write some small stories<br>.We warmly welcome to the intrested one . <br></p>
+		</div>
+		<div class="item">
+			<a href="contact.html"><button><i class="fa fa-phone"></i>&nbsp Contact </button></a>
+		</div>
+	   </div>	
+
+
+
+		<div class="footer">
+	
+			<div class="row">
+		
+
+			<div class="col-3">
+				<h2>Contact Info: </h2>
+					<p> Email: Storynp@gmail.com</p>
+					<p> Phone Number: 9840297322 </P>
+			</div>
+
+
+			<div class="col-3">
+				<h2>Shortcuts: </h2>
+					<a href="index.html"> Home </a><br><br>
+					<a href="page1.html"> Stories </a><br><br>
+					<a href="contact.html"> Contact </a><br><br>
+					<a href="about.html"> About </a><br>
+					
+			</div>
+			
+			
+
+			<div class="col-3">
+				<h2> Branches: </h2>
+					<p> New, baneshwor, KTM </P>
+					<p> Boudha, KTM </P>
+					<p> Brindamod, Jhapa </P>
+			</div>
+
+			<div class="col-3">
+				<h2> Designer & Developer </h2>
+					<a href="#"><p> Bastola Budha </p></a>
+			</div>
+		</div>
+		
+	</div>
+
+	<div class="right col-12">
+			<p> &copy; cpyo right Stories.com 2021</p>
+	</div>
+
+
+	<script>
+			function Click(){
+
+				let nav = document.getElementById("navbar");
+				if(nav.className === "navigation"){
+				nav.className += " clicked";
+				}	
+				else{
+					nav.className = "navigation";	
+				}
+			}
+
+
+	</script>
+	
+</body>
+
+</html>
